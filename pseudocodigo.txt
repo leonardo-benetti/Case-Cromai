@@ -1,0 +1,31 @@
+// shell
+
+enquanto (verdadeiro){   //loop infinito
+    pid = ler ("arquivo pid")
+
+    se (o processo com ID = pid existe){
+        imprime ("1: It is alive")
+    } senao{
+        imprime ("1: It is dead")
+    }
+
+    executa(script.py)
+}
+
+
+// python (script.py)
+
+pid_proprio = busca_pid_deste_script()
+
+abrir ("arquivo pid")
+escrever (pid_proprio, em "arquivo pid")
+
+
+loop de 3 iterações{
+  imprime ("2: I'm alive")
+
+  espera (x segundos)
+}
+
+imprime ("I gonna die now")
+// fim do programa
